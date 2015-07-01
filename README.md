@@ -3,7 +3,33 @@
 [![Build Status](https://travis-ci.org/thisissoon/angular-timesince.svg?branch=master)](https://travis-ci.org/thisissoon/angular-timesince)
 [![Coverage Status](https://coveralls.io/repos/thisissoon/angular-timesince/badge.svg)](https://coveralls.io/r/thisissoon/angular-timesince)
 
-The start of all angularjs projects. A base template for a typical angularjs application.
+## Install
+
+```
+bower install angular-timesince
+```
+
+## Usage
+
+### Option 1
+
+```js
+var myApp = angular.module("myApp", ["sn.timeSince"]);
+
+myApp.controller(["$scope","$filter", function($scope, $filter) {
+  $scope.myTime = 31536000;
+  $scope.timeSince = $filter("timeSince")($scope.myTime);
+}]);
+
+```
+
+### Option 2
+
+```html
+<p>{{ myTime | timeSince }} ago</p>
+```
+
+---
 
 This project structure is based on the [angular-seed](https://github.com/angular/angular-seed) application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
 
