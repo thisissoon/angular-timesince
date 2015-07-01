@@ -16,8 +16,6 @@ module.exports = function (grunt) {
 
         bower: grunt.file.readJSON("./bower.json"),
 
-        env: grunt.file.readJSON("./env.json")[env],
-
         config: {
             outputDir: "./dist/",
             applicationFiles: grunt.file.readJSON("./scripts.json").application,
