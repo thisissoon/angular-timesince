@@ -3,6 +3,8 @@
 [![Build Status](https://travis-ci.org/thisissoon/angular-timesince.svg?branch=master)](https://travis-ci.org/thisissoon/angular-timesince)
 [![Coverage Status](https://coveralls.io/repos/thisissoon/angular-timesince/badge.svg)](https://coveralls.io/r/thisissoon/angular-timesince)
 
+Returns the number of seconds, minutes, days, months or years for a Date object from the current system time.
+
 ## Install
 
 ```

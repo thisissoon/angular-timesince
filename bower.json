@@ -4,11 +4,24 @@
   "version": "0.0.0",
   "homepage": "https://github.com/thisissoon/angular-timesince",
   "license": "MIT",
+  "main": "dist/angular-timesince.js",
+  "ignore": [
+    "app",
+    "tests",
+    ".bowerrc",
+    ".editorconfig",
+    ".gitignore",
+    ".jshintrc",
+    ".travis.yml",
+    "Gruntfile.js",
+    "package.json",
+    "scripts.json"
+  ],
   "private": false,
   "dependencies": {
-    "angular": "~1.3.16"
+    "angular": "^1.2.x"
   },
   "devDependencies": {
-    "angular-mocks": "~1.3.16"
+    "angular-mocks": "^1.2.x"
   }
 }
