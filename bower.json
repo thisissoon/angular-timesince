@@ -1,7 +1,7 @@
 {
   "name": "angular-timesince",
   "description": "Returns the number of seconds, minutes, days, months or years for a Date object from the current system time.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/thisissoon/angular-timesince",
   "license": "MIT",
   "main": "dist/angular-timesince.js",

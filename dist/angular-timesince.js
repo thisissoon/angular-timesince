@@ -1,4 +1,4 @@
-/*! angular-timesince - v0.0.1 - 2015-07-01 */
+/*! angular-timesince - v0.0.2 - 2015-07-01 */
 "use strict";
 /**
  * Based on {@link http://stackoverflow.com/questions/3177836/how-to-format-
