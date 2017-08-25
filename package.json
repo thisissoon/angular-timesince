@@ -1,7 +1,7 @@
 {
   "name": "@thisissoon/angular-timesince",
   "private": false,
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "A simple lightweight library for Angular 2/4+ which returns the number of seconds, minutes, days, months or years since any Date object based on the current system time",
   "keywords": [
     "angular",

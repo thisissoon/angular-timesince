@@ -1,4 +1,4 @@
-# Angular Timesince
+# Angular TimeSince
 [![Build Status][travis-badge]][travis-badge-url]
 [![Coverage Status][coveralls-badge]][coveralls-badge-url]
 
