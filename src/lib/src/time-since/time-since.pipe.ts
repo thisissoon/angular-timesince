@@ -33,11 +33,10 @@ export class TimeSincePipe implements PipeTransform {
    * @returns {*}
    * @memberof TimeSincePipe
    */
-  transform(value: any, args?: any): any {
-
+  public transform(value: any, args?: any): any {
     const date: Date = new Date(value);
 
-    if ( isNaN( date.getTime() ) ){
+    if (isNaN(date.getTime())) {
       return value;
     }
 
@@ -72,7 +71,6 @@ export class TimeSincePipe implements PipeTransform {
     if (interval > 1) { return `${interval} minutes`; }
     if (interval === 1) { return `${interval} minute`; }
 
-    if (interval > 1 || interval === 0) { return `${Math.floor(seconds)} seconds'`; }
-    return `${Math.floor(seconds)} second'`;
+    return `${Math.floor(seconds)} ${seconds === 1 ? 'second' : 'seconds'}`;
   }
 }
