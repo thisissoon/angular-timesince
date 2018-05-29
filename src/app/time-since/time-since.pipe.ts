@@ -11,10 +11,6 @@ import * as durations from './shared/durations';
  * ```html
  *  <p>{{ date | timeSince }} ago</p>
  * ```
- *
- * @export
- * @class TimeSincePipe
- * @implements {PipeTransform}
  */
 @Pipe({
   name: 'timeSince'
@@ -27,10 +23,6 @@ export class TimeSincePipe implements PipeTransform {
    * of seconds between now and the date by the number of seconds in a year,
    * month, day, hour or minute
    *
-   *
-   * @param {*} value
-   * @param {*} [args]
-   * @returns {*}
    * @memberof TimeSincePipe
    */
   public transform(value: any, args?: any): any {
