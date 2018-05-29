@@ -40,28 +40,48 @@ export class TimeSincePipe implements PipeTransform {
 
     let interval = Math.floor(seconds / durations.secondsInYear);
 
-    if (interval > 1) { return `${interval} years`; }
-    if (interval === 1) { return `${interval} year`; }
+    if (interval > 1) {
+      return `${interval} years`;
+    }
+    if (interval === 1) {
+      return `${interval} year`;
+    }
 
     interval = Math.floor(seconds / durations.secondsInMonth);
 
-    if (interval > 1) { return `${interval} months`; }
-    if (interval === 1) { return `${interval} month`; }
+    if (interval > 1) {
+      return `${interval} months`;
+    }
+    if (interval === 1) {
+      return `${interval} month`;
+    }
 
     interval = Math.floor(seconds / durations.secondsInDay);
 
-    if (interval > 1) { return `${interval} days`; }
-    if (interval === 1) { return `${interval} day`; }
+    if (interval > 1) {
+      return `${interval} days`;
+    }
+    if (interval === 1) {
+      return `${interval} day`;
+    }
 
     interval = Math.floor(seconds / durations.secondsInHour);
 
-    if (interval > 1) { return `${interval} hours`; }
-    if (interval === 1) { return `${interval} hour`; }
+    if (interval > 1) {
+      return `${interval} hours`;
+    }
+    if (interval === 1) {
+      return `${interval} hour`;
+    }
 
     interval = Math.floor(seconds / durations.secondsInMin);
 
-    if (interval > 1) { return `${interval} minutes`; }
-    if (interval === 1) { return `${interval} minute`; }
+    if (interval > 1) {
+      return `${interval} minutes`;
+    }
+    if (interval === 1) {
+      return `${interval} minute`;
+    }
 
     return `${Math.floor(seconds)} ${seconds === 1 ? 'second' : 'seconds'}`;
   }

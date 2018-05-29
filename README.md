@@ -3,6 +3,7 @@
 [![Build Status][travis-badge]][travis-badge-url]
 [![Coverage Status][coveralls-badge]][coveralls-badge-url]
 [![Commitizen friendly][commitizen-badge]][commitizen]
+[![code style: prettier][prettier-badge]][prettier-badge-url]
 
 A simple lightweight library for [Angular][angular] which removes excess text and add timesince symbol to end of text before text overflows container.
 
@@ -73,14 +74,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-[travis-badge]: https://travis-ci.org/thisissoon/angular-timesince.svg?branch=master
-[travis-badge-url]: https://travis-ci.org/thisissoon/angular-timesince
-[coveralls-badge]: https://coveralls.io/repos/github/thisissoon/angular-timesince/badge.svg?branch=master
-[coveralls-badge-url]: https://coveralls.io/github/thisissoon/angular-timesince?branch=master
-[angular]: https://angular.io/
-[commitizen]: http://commitizen.github.io/cz-cli/
-[commitizen-badge]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
-
 ## Making Commits
 
 This repo uses [Commitizen CLI](http://commitizen.github.io/cz-cli/) and [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog) to create commits and generate changelogs. Instead of running `git commit` run `git cz` and follow the prompts. Changelogs will then be generated when creating new releases by running `npm run release`.
@@ -88,3 +81,13 @@ This repo uses [Commitizen CLI](http://commitizen.github.io/cz-cli/) and [Conven
 ## Making Releases
 
 Run `npm run release` to create a new release. This will use [Standard Version](https://github.com/conventional-changelog/standard-version) to create a new release. [Standard Version](https://github.com/conventional-changelog/standard-version) will generate / update the changelog based on commits generated using [Commitizen CLI](http://commitizen.github.io/cz-cli/), update the version number following semantic versioning rules and then commit and tag the commit for the release. Simply run `git push --follow-tags origin master`.
+
+[travis-badge]: https://travis-ci.org/thisissoon/angular-timesince.svg?branch=master
+[travis-badge-url]: https://travis-ci.org/thisissoon/angular-timesince
+[coveralls-badge]: https://coveralls.io/repos/github/thisissoon/angular-timesince/badge.svg?branch=master
+[coveralls-badge-url]: https://coveralls.io/github/thisissoon/angular-timesince?branch=master
+[angular]: https://angular.io/
+[commitizen]: http://commitizen.github.io/cz-cli/
+[commitizen-badge]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
+[prettier-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=shield
+[prettier-badge-url]: https://github.com/prettier/prettier
