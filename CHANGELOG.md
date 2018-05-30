@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/thisissoon/angular-timesince/compare/v1.1.0...v2.0.0) (2018-05-30)
+
+
+### Features
+
+* **timesince:** adding angular 6 support ([2dbe4a9](https://github.com/thisissoon/angular-timesince/commit/2dbe4a9))
+
+
+### BREAKING CHANGES
+
+* **timesince:** Added @angular/core as a peer dependency
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/thisissoon/angular-timesince/compare/v1.1.0-rc.0...v1.1.0) (2017-12-04)
 
