@@ -1,29 +1,31 @@
 import { AppPage } from './app.po';
 import { browser } from 'protractor';
 
-describe('TimeSince Lib E2E Tests', function () {
-
+describe('TimeSince Lib E2E Tests', function() {
   let page: AppPage;
 
-  beforeEach(() => page = new AppPage());
+  beforeEach(() => (page = new AppPage()));
 
   beforeEach(() => page.navigateTo());
 
   afterEach(() => {
-    browser.manage().logs().get('browser').then((browserLog: any[]) => {
-      expect(browserLog).toEqual([]);
-    });
+    browser
+      .manage()
+      .logs()
+      .get('browser')
+      .then((browserLog: any[]) => {
+        expect(browserLog).toEqual([]);
+      });
   });
 
   describe('Parse values', () => {
     it('should return time ago if parsable date value', () => {
-      const years = new Date().getFullYear() - 2010;
       const dateStr = page.getElementDateStr();
       const dateNum = page.getElementDateNum();
       const dateObj = page.getElementDateObj();
-      expect(dateStr.getText()).toBe(`${years} years ago`);
-      expect(dateNum.getText()).toBe(`${years} years ago`);
-      expect(dateObj.getText()).toBe(`${years} years ago`);
+      expect(dateStr.getText()).toMatch(/[0-9] years ago/);
+      expect(dateNum.getText()).toMatch(/[0-9] years ago/);
+      expect(dateObj.getText()).toMatch(/[0-9] years ago/);
     });
 
     it('should return original value if invalid date', () => {
@@ -81,5 +83,4 @@ describe('TimeSince Lib E2E Tests', function () {
       expect(dateSecond.getText()).toBe(`1 second ago`);
     });
   });
-
 });
