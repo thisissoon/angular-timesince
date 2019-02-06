@@ -13,7 +13,7 @@ import * as durations from './shared/durations';
  * ```
  */
 @Pipe({
-  name: 'timeSince'
+  name: 'timeSince',
 })
 export class TimeSincePipe implements PipeTransform {
   /**
@@ -34,8 +34,9 @@ export class TimeSincePipe implements PipeTransform {
 
     const seconds = Math.abs(
       Math.floor(
-        (new Date().getTime() - date.getTime()) / durations.millisecondsInSecond
-      )
+        (new Date().getTime() - date.getTime()) /
+          durations.millisecondsInSecond,
+      ),
     );
 
     let interval = Math.floor(seconds / durations.secondsInYear);

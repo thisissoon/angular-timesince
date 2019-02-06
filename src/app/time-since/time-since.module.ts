@@ -9,6 +9,6 @@ import { TimeSincePipe } from './time-since.pipe';
  */
 @NgModule({
   declarations: [TimeSincePipe],
-  exports: [TimeSincePipe]
+  exports: [TimeSincePipe],
 })
 export class TimeSinceModule {}
