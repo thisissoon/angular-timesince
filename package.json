@@ -48,7 +48,9 @@
     "release": "standard-version",
     "postrelease": "npm run packagr"
   },
-  "peerDependencies": {},
+  "peerDependencies": {
+    "@angular/core": ">=5.0.0"
+  },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.13.0",
     "@angular/animations": "^7.2.4",
