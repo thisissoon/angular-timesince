@@ -1,6 +1,6 @@
 # Angular TimeSince
 
-[![Build Status][travis-badge]][travis-badge-url]
+[![Build Status][circle-badge]][circle-badge-url]
 [![Coverage Status][coveralls-badge]][coveralls-badge-url]
 [![Commitizen friendly][commitizen-badge]][commitizen]
 [![code style: prettier][prettier-badge]][prettier-badge-url]
@@ -82,8 +82,8 @@ This repo uses [Commitizen CLI](http://commitizen.github.io/cz-cli/) and [Conven
 
 Run `npm run release` to create a new release. This will use [Standard Version](https://github.com/conventional-changelog/standard-version) to create a new release. [Standard Version](https://github.com/conventional-changelog/standard-version) will generate / update the changelog based on commits generated using [Commitizen CLI](http://commitizen.github.io/cz-cli/), update the version number following semantic versioning rules and then commit and tag the commit for the release. Simply run `git push --follow-tags origin master`.
 
-[travis-badge]: https://travis-ci.org/thisissoon/angular-timesince.svg?branch=master
-[travis-badge-url]: https://travis-ci.org/thisissoon/angular-timesince
+[circle-badge]: https://circleci.com/gh/thisissoon/angular-timesince.svg?style=shield
+[circle-badge-url]: https://circleci.com/gh/thisissoon/angular-timesince
 [coveralls-badge]: https://coveralls.io/repos/github/thisissoon/angular-timesince/badge.svg?branch=master
 [coveralls-badge-url]: https://coveralls.io/github/thisissoon/angular-timesince?branch=master
 [angular]: https://angular.io/
